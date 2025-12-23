@@ -2,18 +2,23 @@ const projectsData = [
   {
     title: "Eye Disease Detection using AI/ML",
     description:
-      "An AI-based system that detects eye diseases from retinal images using CNN models. The system helps in early diagnosis and improves accuracy using deep learning.",
-    tech: ["Python", "CNN", "Machine Learning", "Flask"],
-    github: "#",
-    live: "#",
+      "An AI-based system that detects eye diseases from retinal images using CNN models to support early and accurate diagnosis.",
+    tech: ["Python", "CNN", "DenseNet121","ResNet50","Inception V3", "Flask"],
+    github: "https://github.com/yashsunilrathi/eye-disease-detection",
   },
   {
-    title: "MockVerse – AI Mock Exam Generator",
+    title: "MockMate – AI Mock Exam Generator",
     description:
-      "A full-stack AI application that generates mock exam papers using LLaMA. It supports automated question generation and evaluation.",
-    tech: ["React", "Node.js", "MongoDB", "LLaMA", "CI/CD"],
-    github: "#",
-    live: "#",
+      "A full-stack AI application that generates mock exam papers using LLaMA, helping students practice with AI-generated questions.",
+    tech: ["React", "Node.js", "MongoDB", "LLaMA"],
+    github: "https://github.com/yashsunilrathi/MockMate",
+  },
+  {
+    title: "FarmGPT – Smart Fertilizer Advisory System",
+    description:
+      "An AI-powered system that provides fertilizer and crop recommendations based on soil data, weather conditions and crop type.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/yashsunilrathi/FarmGpt",
   },
 ];
 
@@ -25,7 +30,7 @@ const Projects = () => {
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {projectsData.map((project) => (
             <div
               key={project.title}
@@ -50,18 +55,14 @@ const Projects = () => {
                 ))}
               </div>
 
-              <div className="flex gap-4 mt-6">
+              <div className="mt-6">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-blue-400 hover:underline"
                 >
-                  GitHub
-                </a>
-                <a
-                  href={project.live}
-                  className="text-blue-400 hover:underline"
-                >
-                  Live Demo
+                  View Source Code →
                 </a>
               </div>
             </div>

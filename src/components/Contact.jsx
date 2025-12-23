@@ -1,4 +1,8 @@
 const Contact = () => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:yashsunilrathi@gmail.com";
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-800 px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -12,37 +16,40 @@ const Contact = () => {
         </p>
 
         <div className="space-y-4 text-lg">
-          <p>
-            📧 Email:{" "}
-            <a
-              href="mailto:yashrathi@email.com"
+          {/* EMAIL */}
+          <p className="flex justify-center items-center gap-2">
+            📧
+            <button
+              onClick={handleEmailClick}
               className="text-blue-400 hover:underline"
             >
-              yashrathi@email.com
-            </a>
+              yashsunilrathi@gmail.com
+            </button>
           </p>
 
-          <p>
-            🔗 GitHub:{" "}
+          {/* GITHUB */}
+          <p className="flex justify-center items-center gap-2">
+            🔗
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/yashsunilrathi"
               target="_blank"
               rel="noreferrer"
               className="text-blue-400 hover:underline"
             >
-              github.com/yourusername
+              github.com/yashsunilrathi
             </a>
           </p>
 
-          <p>
-            💼 LinkedIn:{" "}
+          {/* LINKEDIN */}
+          <p className="flex justify-center items-center gap-2">
+            💼
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/yash-rathi-10a781262/"
               target="_blank"
               rel="noreferrer"
               className="text-blue-400 hover:underline"
             >
-              linkedin.com/in/yourprofile
+              linkedin.com/in/yash-rathi-10a781262
             </a>
           </p>
         </div>
