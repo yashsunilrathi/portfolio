@@ -1,3 +1,4 @@
+//updated file 
 import { useState } from "react";
 
 const Navbar = () => {
@@ -66,5 +67,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;
