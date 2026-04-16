@@ -86,10 +86,3 @@ Git, GitHub, TensorFlow, REST APIs
 
 ---
 
-## ⭐ Fun Fact
-
-I scored **99 marks in Mathematics** in both 10th and 12th 🚀  
-
----
-
-⭐ *Feel free to check out my repositories and give them a star!*
